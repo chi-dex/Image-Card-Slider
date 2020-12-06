@@ -13,7 +13,7 @@ body {
   margin: 3rem auto;
 
   .slider-header {
-    font-size: 5rem;
+    font-size: 4vw;
     color: tomato;
     text-align: center;
     margin-bottom: 2rem;
@@ -25,6 +25,13 @@ body {
   border: none;
   padding: 0 1rem;
   height: 480px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: none;
+    outline: none;
+  }
 
   .card {
     width: 100%;
@@ -186,5 +193,11 @@ body {
 }
 
 .slick-prev {
-  left: -72px !important;
+  left: -32px !important;
+  z-index: 5 !important;
+}
+
+.slick-next {
+  right: 32px !important;
+  z-index: 5 !important;
 }
